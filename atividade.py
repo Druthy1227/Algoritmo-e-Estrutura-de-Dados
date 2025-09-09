@@ -9,3 +9,9 @@ else:
 
 
 print(f"O peso dos peixes que João pescou foi de {peso} kg") # Print da menssagem com o peso, independente de excesso
+
+
+# Integrantes
+# Luiz Gustavo
+# Guilherme Dionízio
+# Danilo Lima
