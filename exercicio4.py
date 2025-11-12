@@ -1,9 +1,9 @@
 import array
 
 tamanho_vetor = int((input("Quantos números terá o vetor?: ")))  # Recebe o tamanho do vetor
-vetor = array.array("i", [0] * tamanho_vetor)  # Abre o vetor de 20 números -->inteiros<--
+vetor = array.array("i", [0] * tamanho_vetor)  # Abre o vetor com a quantidade de números -->inteiros<-- variável (citada no tamanho_vetor)
 
-print("Digite os valores do vetor:")  # recebe todos os 20 vetores
+print("Digite os valores do vetor:")  # recebe todos os vetores
 for i in range(tamanho_vetor):
     vetor[i] = int(input(f"Posição {i+1}: "))
 
@@ -13,14 +13,14 @@ print(
 
 # A partir daqui todo o vetor já existe.
 for i in range(tamanho_vetor):
-          # Range(20) pode ser facilmente alterado para range(len(vetor)), uma vez que a função len se refere a lenghth (comprimento/tamanho)
+          # range(tamanho_vetor) pode ser facilmente alterado para range(len(vetor)), uma vez que a função len se refere a lenghth (comprimento/tamanho)
     indice_menor = (
         i  # Índice alvo para ser organizado, começando pelo início do vetor (índice 0)
     )
 
     for k in range(
         i + 1, tamanho_vetor
-    ):  # Le o comment de cima, vale pro mesmo 20 após a vírgula || Varrer o vetor a partir da posição i+1 até o final, em caso de i,20 geraria apenas uma auto-comparação.
+    ):  # Le o comment de cima, vale pro mesmo após a vírgula (tamanho_vetor) || Varrer o vetor a partir da posição i+1 até o final, em caso de i,20 geraria apenas uma auto-comparação.
         if (
             vetor[k] < vetor[indice_menor]
         ):  # Se o vetor de indice k for MENOR que o valor do indice_menor, atualiza o indice_menor
