@@ -1,0 +1,24 @@
+import array
+
+vetor_A = array.array("i", [0] * 10)
+vetor_B = array.array("i", [0] * 10)
+vetor_Soma = array.array("i", [0] * 10)
+
+# Vetor 1
+print("Digite os 10 valores do VETOR A:")
+for i in range(10):
+    vetor_A[i] = int(input(f"Posição {i+1}: "))
+
+# Vetor 2
+print("Digite os 10 valores do VETOR B:")
+for i in range(10):
+    vetor_B[i] = int(input(f"Posição {i+1}: "))
+
+# Soma dos vetores
+for i in range(10):
+    vetor_Soma[i] = vetor_A[i] + vetor_B[i]
+
+# Resultado
+print("Resultado da SOMA:")
+for i in range(10):
+    print(f"Posição {i}: {vetor_Soma[i]}")
