@@ -3,7 +3,7 @@ import array
 tamanho_vetor = int((input("Quantos números terá o vetor?: ")))  # Recebe o tamanho do vetor
 vetor = array.array("i", [0] * tamanho_vetor)  # Abre o vetor com a quantidade de números -->inteiros<-- variável (citada no tamanho_vetor)
 
-print("Digite os valores do vetor:")  # recebe todos os vetores
+print("Digite os valores do vetor:")  # recebe todos os valores
 for i in range(tamanho_vetor):
     vetor[i] = int(input(f"Posição {i+1}: "))
 
@@ -14,9 +14,7 @@ print(
 # A partir daqui todo o vetor já existe.
 for i in range(tamanho_vetor):
           # range(tamanho_vetor) pode ser facilmente alterado para range(len(vetor)), uma vez que a função len se refere a lenghth (comprimento/tamanho)
-    indice_menor = (
-        i  # Índice alvo para ser organizado, começando pelo início do vetor (índice 0)
-    )
+    indice_menor = i  # Índice alvo para ser organizado, começando pelo início do vetor (índice 0)
 
     for k in range(
         i + 1, tamanho_vetor
@@ -33,9 +31,8 @@ for i in range(tamanho_vetor):
     vetor[i] = vetor[
         indice_menor
     ]  # O vetor[i] de fato agora está recebendo o valor do vetor[indice_menor], que é o menor valor encontrado no ciclo "k", ou seja, o vetor[indice_menor] existirá em duas instâncias.
-    vetor[indice_menor] = (
-        temp  # Atribui o valor temp (original da posição i) para a posição do indice_menor (índice que foi extraído e "clonado" na posição i).
-    )
+    vetor[indice_menor] = temp  # Atribui o valor temp (original da posição i) para a posição do indice_menor (índice que foi extraído e "clonado" na posição i).
+
 
 print(f"Vetor Ordenado: {list(vetor)}")
 
