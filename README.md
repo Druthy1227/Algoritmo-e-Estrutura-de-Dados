@@ -1,1 +1,10 @@
-🛠️ Exercício 4: Selection Sort (Ordenação por Seleção)Este README apresenta a implementação do algoritmo Selection Sort em um vetor de 20 posições inteiras, seguindo a estratégia de ordenação por seleção fornecida.💡 Conceito e Estratégia de OrdenaçãoO Selection Sort (Ordenação por Seleção) ordena o vetor em ordem crescente seguindo os passos abaixo para garantir que o menor elemento seja colocado na primeira posição, o segundo menor na segunda posição, e assim por diante.🎯 Estratégia Detalhada:Selecione o elemento que apresente o menor valor na parte não ordenada do vetor.Troque esse elemento pelo primeiro da parte não ordenada (que é o elemento na posição atual que está sendo preenchida).Repita essas operações, envolvendo agora apenas os $N-1$ elementos restantes (colocando o de menor valor na segunda posição), depois os $N-2$ restantes (colocando o de menor valor na terceira posição), etc., até restar um único elemento.
+Exercício 4 - Selection Sort ou Ordenação por Seleção
+Desenvolva um algoritmo que tenha como entrada um vetor de 20
+posições inteiras e ordene os valores em ordem crescente,
+usando a estratégia:
+● selecione o elemento que apresente o menor valor
+● troque esse elemento pelo primeiro
+● repita essas operações, envolvendo agora apenas os 19
+elementos restantes (colocando o de menor valor na segunda
+posição), depois os 18 restantes (colocando o de menor valor
+na terceira posição), etc., até restar um único elemento
